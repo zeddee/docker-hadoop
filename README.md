@@ -1,12 +1,16 @@
-# Changes
+# Hadoop Docker (customized)
 
-Version 1.1.0 introduces healthchecks for the containers.
-
-# Hadoop Docker
+Based on [https://github.com/big-data-europe/docker-hadoop](https://github.com/big-data-europe/docker-hadoop)
 
 ## Supported Hadoop Versions
 * 2.7.1 with OpenJDK 7
 * 2.7.1 with OpenJDK 8
+
+## Contents
+
+- [Quick Start](#quick-start)
+- [Publish to `localhost`](#publish-to-localhost)
+- [Configure Environment Variables](#configure-environment-variables)
 
 ## Quick Start
 
