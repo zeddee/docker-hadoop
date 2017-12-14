@@ -25,6 +25,19 @@ Run `docker network inpect` on the network (e.g. `dockerhadoop_default`) to find
 * Nodemanager: http://<dockerhadoop_IP_address>:8042/node
 * Resource manager: http://<dockerhadoop_IP_address>:8088/
 
+## Publish to `localhost`
+
+For local testing, or when you need to publish to `localhost` (such as when provisioning with Vagrant, or running on macOS):
+
+`docker-compose -f docker-compose-local.yml up`
+
+This publishes hadoop interfaces on the following URLS:
+
+* Namenode: localhost:50070/dfshealth.html#tab-overview
+* History server: localhost:58188/applicationhistory
+* Nodemanager: localhost:58042/node
+* Resource manager: localhost:58088/
+
 ## Configure Environment Variables
 
 The configuration parameters can be specified in the hadoop.env file or as environmental variables for specific services (e.g. namenode, datanode etc.):
