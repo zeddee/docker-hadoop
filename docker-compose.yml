@@ -6,7 +6,7 @@ services:
     container_name: namenode
     ports:
       - "58070:50070"
-      - "58020:8020"
+      - "8020:8020"
     volumes:
       - hadoop_namenode:/hadoop/dfs/name
     networks:
